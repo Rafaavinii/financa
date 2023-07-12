@@ -1,7 +1,8 @@
 from django.urls import path
-from .views import DespesaPorCategoria
+from .views import *
 
 
 urlpatterns = [
-    path('', DespesaPorCategoria.as_view(), name='despesaporcategoria')
+    path('porcategoria/', DespesaPorCategoriaAPIView.as_view(), name='despesaporcategoria'),
+    path('pormes/', DespesaPorMesAPIView.as_view(), name='despesapormes')
 ]
