@@ -53,20 +53,6 @@ Para instalação do software é necessário:
 > python manage.py runserver
 ```
 
-## ⚙️ Executando os testes
-
-Para executar os testes automatizados deste sistema, você pode seguir os seguintes passos:
-
-1. Ative o ambiente virtual:
-```
-> venv/Scripts/activate
-```
-
-2. Execute o seguinte comando para executar todos os testes automatizados:
-```
-python manage.py test
-```
-
 ## API
 
 ## Visão Geral
@@ -107,7 +93,7 @@ Exemplo de corpo da requisição de login:
 
 Exemplo de corpo da requisição de despesa:
 ~~~JSON
-}
+{
     "valor": 0,
     "data": "2023-07-27",
     "categoria": "alimentacao",
